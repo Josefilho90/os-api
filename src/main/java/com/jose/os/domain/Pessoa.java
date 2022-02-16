@@ -19,7 +19,7 @@ public abstract class Pessoa implements Serializable {
 	private Integer id;
 	private String nome;
 	
-	@CPF
+	@CPF(message = "número de registro de contribuinte individual brasileiro (CPF) inválido")
 	private String cpf;
 	private String telefone;
 
